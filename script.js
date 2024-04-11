@@ -36,4 +36,27 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error!', error.message))
 })
 
+const seeMoreBtn = document.querySelector('.see-more-btn');
+const hiddenWorks = document.querySelectorAll('.work:nth-child(n+4)'); // Selects the works after the fourth one
 
+// Initially show the first four works
+const initialWorks = document.querySelectorAll('.work:nth-child(-n+3)');
+initialWorks.forEach(work => {
+    work.classList.add('show');
+});
+
+seeMoreBtn.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default behavior of the link
+
+    // Toggle a class to show/hide the additional works
+    hiddenWorks.forEach(work => {
+        work.classList.toggle('show');
+    });
+
+    // Change the text of the button based on the state
+    if (seeMoreBtn.textContent === 'See More') {
+        seeMoreBtn.textContent = 'See Less';
+    } else {
+        seeMoreBtn.textContent = 'See More';
+    }
+});

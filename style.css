@@ -20,8 +20,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 5px 10% 5px 5%;
+  padding: 5px 5% 5px 5%;
   position: fixed;
   left: 0;
   top: 0;
@@ -29,10 +28,14 @@ nav{
   z-index: 500;
   height: 10vh;
 }
+nav ul{
+  display: flex;
+  justify-content: flex-end;
+}
 nav ul li{
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 10px 10px;
   font-size: 20px;
 }
 nav ul li a{
@@ -168,6 +171,10 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
+}
+.work.show {
+  display: block; 
 }
 
 .work img{
@@ -242,6 +249,29 @@ h1{
 .see-more-btn:hover{
   transform: scale(1.05);
   cursor: pointer;
+}
+
+/* Achievements */
+#achievements{
+  padding: 80px 5vw;
+  color: #1e1111;
+}
+
+#achievements h2{
+  font-size: 30px; 
+  font-weight: 500;
+}
+#achievements h3{
+  font-size: 25px; 
+  font-weight: 500;
+}
+
+#achievements a:hover{
+  cursor: pointer;
+}
+
+#achievements ul li a{
+  text-decoration:underline;
 }
 
 /* Contact*/
