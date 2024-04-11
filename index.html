@@ -1,48 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rojesh Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css" integrity="sha512-pZlKGs7nEqF4zoG0egeK167l6yovsuL8ap30d07kA5AJUq+WysFlQ02DLXAmN3n0+H3JVz5ni8SJZnrOaYXWBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media-queries.css">
-</head>
-<body>
-  <nav class="border-b shadow-md min-w-full">
-    <img src="images/logo.png" alt="" class="logo">
-    <ul id="sidemenu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-    </ul> 
-    <i class="fa-solid fa-bars" onclick="openMenu()"></i>       
-  </nav>
-  <div class="main-container">
-    <div class="text-intro">
-      <h1>{ Hello World, I'm <span>Rojesh</span><br> Shrestha from Nepal. }</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rojesh Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+      integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css"
+      integrity="sha512-pZlKGs7nEqF4zoG0egeK167l6yovsuL8ap30d07kA5AJUq+WysFlQ02DLXAmN3n0+H3JVz5ni8SJZnrOaYXWBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"
+      integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+  </head>
+  <body>
+    <nav class="border-b shadow-md min-w-full">
+      <img src="images/logo.png" alt="" class="logo" />
+      <ul id="sidemenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+    <div class="main-container">
+      <div class="text-intro">
+        <h1>
+          { Hello World, I'm <span>Rojesh</span><br />
+          Shrestha from Nepal. }
+        </h1>
+      </div>
     </div>
-  </div>
-<!---- About-->
-  <div id="about">
-    <h2>About Me</h2>
+    <!---- About-->
+    <div id="about">
+      <h2>About Me</h2>
       <div class="row">
         <div class="about-col-1">
-          <img src="images/profile_img2.JPG" alt="">
+          <img src="images/profile_img2.JPG" alt="" />
         </div>
         <div class="about-col-2">
-          <p>Fifth Semester Computer Science student currently studying BSc. CSIT at Amrit Science Campus(ASCOL). I'm interested in solving real world problems with technology. I have done projects on Web Development and Machine Learning field.</p>
+          <p>
+            Fifth Semester Computer Science student currently studying BSc. CSIT
+            at Amrit Science Campus(ASCOL). I'm interested in solving real world
+            problems with technology. I have done projects on Web Development
+            and Machine Learning field.
+          </p>
 
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+            <p class="tab-links active-link" onclick="openTab('skills')">
+              Skills
+            </p>
             <p class="tab-links" onclick="openTab('experience')">Experience</p>
             <p class="tab-links" onclick="openTab('education')">Education</p>
           </div>
@@ -70,87 +101,184 @@
           </div>
           <div class="tab-contents" id="experience">
             <ul>
-              <li>Oct 2023 - Present: <span>Sessami Web Development Traineeship</span></li>
-              <li>July 2023 - Sept 2023: <span>Code for Nepal Data Fellow</span></li>
-              <li>Jan 2023 - April 2023: <span>Fusemachines AI Fellowship</span></li>
+              <li>
+                Oct 2023 - Present:
+                <span>Sessami Web Development Traineeship</span>
+              </li>
+              <li>
+                July 2023 - Sept 2023: <span>Code for Nepal Data Fellow</span>
+              </li>
+              <li>
+                Jan 2023 - April 2023: <span>Fusemachines AI Fellowship</span>
+              </li>
             </ul>
           </div>
           <div class="tab-contents" id="education">
             <ul>
-              <li><span>Amrit Science Campus</span> (2021- Present): 
-                BSc. CSIT Sixth Semester</li>
               <li>
-                <span>Xavier International College</span> (2018-2021):
-                Plus 2 · 3.85 GPA · A++</li>
-              <li> 
-                <span>Nepalaya School</span> (2005-2018):
-                SEE · 3.95 GPA · A++</li>
+                <span>Amrit Science Campus</span> (2021- Present): BSc. CSIT
+                Sixth Semester
+              </li>
+              <li>
+                <span>Xavier International College</span> (2018-2021): Plus 2 ·
+                3.85 GPA · A++
+              </li>
+              <li>
+                <span>Nepalaya School</span> (2005-2018): SEE · 3.95 GPA · A++
+              </li>
             </ul>
           </div>
         </div>
       </div>
-  </div>
+    </div>
 
-<!-- Portfolio -->
-  <div id="portfolio">
-    <h2>My Portfolio</h2>
-    <div class="work-list">
-      <div class="work">
-        <img src="images/sessami.png" alt="Sessami.co">
-        <div class="layer">
-          <h4>Sessami</h4><a href="https://sessami-landing-page.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-          <p>This includes the link for the list of assignments Rojesh did under the web development traineeship of Sessami.</p>
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <h2>My Portfolio</h2>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/sessami.png" alt="Sessami.co" />
+          <div class="layer">
+            <h4>Sessami</h4>
+            <a href="https://sessami-landing-page.vercel.app/" target="_blank"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+            <p>
+              This includes the link for the list of assignments Rojesh did
+              under the web development traineeship of Sessami.
+            </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/project2.PNG" alt="Dice Game" />
+          <div class="layer">
+            <h4>Dice Game</h4>
+            <a href="https://rojesh-react-dice-game.vercel.app/" target="_blank"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+            <p>This is the dice rolling game built in React Js by Rojesh.</p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/e-com.png" alt="E-Commerce" />
+          <div class="layer">
+            <a
+              href="https://react-redux-ecommerce-psi.vercel.app/"
+              target="_blank"
+              ><h4>E-Commerce Website</h4>
+              <i class="fas fa-external-link-alt"></i
+            ></a>
+            <p>
+              This is a food website based on React which I built in order to
+              learn more about Redux toolkit
+            </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/crud.png" alt="CRUD App" />
+          <div class="layer">
+            <a
+              href="https://react-crud-seven-livid.vercel.app/read"
+              target="_blank"
+              ><h4>CRUD App</h4>
+              <i class="fas fa-external-link-alt"></i
+            ></a>
+            <p>
+              This is a CRUD app developed with React, Tailwind and Axios to
+              learn about the basics.
+            </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/cleancam.png" alt="Clean Cam" />
+          <div class="layer">
+            <a
+              href="https://devfolio.co/projects/cleancam-a709"
+              target="_blank"
+              ><h4>Clean Cam</h4>
+              <i class="fas fa-external-link-alt"></i
+            ></a>
+            <p>
+              An Object Detection Based Application that detects people
+              littering in the streets through CCTV and alerts the concerned
+              authorities.Here I prepared. dataset for the model and trained ML
+              model
+            </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/e-com.png" alt=""/>
+          <div class="layer">
+            <a
+              href="https://react-redux-ecommerce-psi.vercel.app/"
+              target="_blank"
+              ><h4>E-Commerce Website</h4>
+              <i class="fas fa-external-link-alt"></i
+            ></a>
+            <p>
+              This is a food website based on React which I built in order to
+              learn more about Redux toolkit
+            </p>
+          </div>
         </div>
       </div>
-      <div class="work">
-        <img src="images/project2.PNG" alt="Sessami.co">
-        <div class="layer">
-          <h4>Dice Game</h4><a href="https://rojesh-react-dice-game.vercel.app/"" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-          <p>This is the dice rolling game built in React Js by Rojesh.</p>
+      <a href="#" class="see-more-btn">See More</a>
+    </div>
+
+    <!-- Contact-->
+    <div id="contact">
+      <h2>Contact Me</h2>
+      <div class="row">
+        <div class="contact-left">
+          <p class="email">
+            <i class="fa-solid fa-envelope"></i>shrestharojesh34@gmail.com
+          </p>
+          <p><i class="fa-solid fa-phone"></i>+977-9841123922</p>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/rojesh-shrestha-77842820a/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/rojesh.shrestha.391"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/annoyingg_ro/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/almighty_senju" target="_blank"
+              ><i class="fa-brands fa-square-x-twitter"></i
+            ></a>
+          </div>
+          <a href="CV.pdf" download="" class="btn btn2">Download CV</a>
         </div>
-      </div>
-      <div class="work">
-        <img src="images/work-3.png" alt="">
-        <div class="layer">
-          <a href="www.facebook.com" target="_blank"><h4>Social Media</h4><i class="fas fa-external-link-alt"></i></a>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit expedita ipsam ipsa magni saepe eius voluptates fuga reiciendis quaerat quis?</p>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              placeholder="Your Message"
+              cols="30"
+              rows="6"
+            ></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
         </div>
       </div>
     </div>
-    <a href="#" class="see-more-btn">See More</a>
-  </div>
-
-
-<!-- Contact-->
-  <div id="contact">
-    <h2>Contact Me</h2>
-    <div class="row">
-      <div class="contact-left">
-        <p class="email"><i class="fa-solid fa-envelope"></i>shrestharojesh34@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i>+977-9841123922</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/rojesh-shrestha-77842820a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.facebook.com/rojesh.shrestha.391" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/annoyingg_ro/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://twitter.com/almighty_senju" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
-        </div>
-        <a href="CV.pdf" download="" class="btn btn2">Download CV</a>
-      </div>
-      <div class="contact-right">
-        <form name="submit-to-google-sheet">
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="Email" placeholder="Your Email" required>
-          <textarea name="Message" placeholder="Your Message" cols="30" rows="6"></textarea>
-          <button type="submit" class="btn btn2">Submit</button>
-        </form>
-        <span id="msg"></span>
-      </div>
+    <div class="copyright">
+      <p>Copyright &copy; Rojesh Shrestha</p>
     </div>
-  </div>
-  <div class="copyright">
-    <p>Copyright &copy; Rojesh Shrestha</p>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
