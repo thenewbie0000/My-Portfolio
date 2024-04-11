@@ -16,7 +16,7 @@
   }
 }
 @media screen and (max-width:800px){
-  .sidemenu li{
+  #sidemenu li{
     font-size: 14px;
   }
   .text-intro h1{
@@ -54,7 +54,10 @@
     font-size: 40px;
   }
   nav ul li a {
-    font-size: 17px;
+    font-size: 16px;
+  }
+  nav{
+    padding-right: 0;
   }
 }
 
@@ -76,6 +79,18 @@
     font-size: 40px;
   }
   
+  #sidemenu{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidemenu-text{
+    position: absolute;
+    top: 10px;
+  }
+  nav{
+    height: 7vh;
+  }
   nav .fa-solid{
     display: block;
     font-size: 25px;
@@ -101,7 +116,7 @@
     position: absolute;
     left: 25px;
     cursor: pointer;
-    top: 25px;
+    top: 0px;
   }
   nav ul li a{
     color: white;
