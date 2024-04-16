@@ -278,6 +278,9 @@ h1{
 #contact{
   padding: 50px 5vw;
 }
+.email a:hover{
+  cursor: pointer;
+}
 .contact-left{
   flex-basis: 35%;
 }
